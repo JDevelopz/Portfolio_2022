@@ -1,0 +1,69 @@
+// Styles folder 
+// Author: Jeffrey Meijer 
+// @copyright Copyright (c)
+// ----------------------------------------------------------------
+// @ Framework imports by default
+@import './root.scss';
+@import './nav.scss';
+@import './header.scss';
+@import './services.scss';
+@import './skills';
+@import './projects.scss';
+@import './testimonials.scss';
+@import './contact.scss';
+@import './footer.scss';
+@import './buttons';
+
+// Google fonts 
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+// Main paragraph styles
+p {
+    color: $paragraph-text;
+    font-family: $p-font;
+    font-size: 18px;
+}
+// Main span styles
+.span-a {
+    display: inline-block;
+    color: $span-text;
+    transform: rotate(-25deg);
+    font-size: 18px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+// Main attribute styles
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+// Margin left auto
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.grey-circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(234, 228, 228);
+    border-radius: 50%;
+    margin-right: 20px;
+    a {
+        text-decoration: none;
+        color: inherit;
+        margin:auto;
+    }
+    i {
+        font-size: 20px;
+        position: relative; 
+        top:15px;
+        left:15px;
+    }
+}

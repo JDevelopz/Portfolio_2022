@@ -1,0 +1,104 @@
+// Root elements
+//Color variables
+$background-white: #ffff;
+$background-yellow:#fcda69;
+$header-text: #18171c;
+$paragraph-text: #57565a;
+$primary-btn: #8873ef;
+$span-text: #8e7af0;
+$p-font: 'Comic Neue', cursive;
+
+// Main elements preverences and styles
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+// main header color styles
+h1,h2,h3,h4,h5,h6 {
+    color: $header-text;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 576px) {
+        font-size: 48px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 52px;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 56px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 70px;
+    }
+    @media screen and (min-width: 1400px) {
+        font-size: 70px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 576px) {
+        font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 25px;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 35px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 40px;
+    }
+    @media screen and (min-width: 1400px) {
+        font-size: 40px;
+    }
+}
+
+//----------------------------------------------------------------
+// Container units. 
+// ----------------------------------------------------------------
+
+// Self made CSS framework written by Jeff Meijer
+// Containers 
+.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @media screen and (min-width: 576px) {
+        width: 540px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 720px;
+    }
+    @media screen and (min-width: 992px) {
+        width: 960px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1140px;
+    }
+    @media screen and (min-width: 1400px) {
+        width: 1200px;
+    }
+}
+
+// ----------------------------------------------------------------
+// Rows and columns
+
+.row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items:flex-start;
+}
+
+.row-center_space {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

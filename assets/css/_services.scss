@@ -1,0 +1,67 @@
+// ----------------------------------------------------------------
+// Services Section
+#services {
+  background-color: $background-yellow;
+  .services {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    @media screen and (max-width: 576px) {
+        flex-direction:column;
+        
+    }
+    .services-offer {
+      width: 40%;
+      @media screen and (max-width: 576px) {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .services-overview {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      @media screen and (max-width: 576px) {
+        margin-top: 50px;
+        max-width: 80%;
+        margin-left:auto;
+        margin-right: auto;
+      }
+      .service {
+        margin-bottom: 40px;
+        hr {
+          background-color: black;
+          border: none;
+          height: 2px;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        h2 {
+          max-width: 70%;
+        }
+        span {
+          color: black;
+          font-weight: bold;
+          font-family: $p-font;
+          margin-right: 10px;
+        }
+        .explore {
+            margin-top: 20px;
+          p {
+            color: black;
+            font-family: $p-font;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+div {
+  // border: solid 1px red;
+}

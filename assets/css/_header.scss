@@ -1,0 +1,64 @@
+// ----------------------------------------------------------------
+// Start Sections and styles
+@import './root.scss';
+// ----------------------------------------------------------------
+// Header Section 
+#header {
+    position: relative;
+    background-color: $background-white;
+    padding-bottom: 50px;
+    .hero {
+        position: relative;
+        z-index: 5;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .intro {
+            width: 70%;
+            @media screen and (max-width: 768px) {
+                width: 90%;
+            }
+            .intro-text {
+                display: flex;
+                flex-direction: row;
+            }
+            .action-buttons {
+                padding-left: 20px;
+                margin-top: 20px;
+                @media screen and (max-width: 500px) {
+                    padding-left:65px;
+                }
+            }
+            .social-buttons {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 100px;
+                p {
+                    margin-right: 20px;
+                }
+        }
+    }
+}
+        
+.canvas-div {
+    @media screen and (max-width: 756px) {
+        display: none;
+    }
+    @media screen and (max-width: 1200px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 992px) {
+        width: 40%;
+    }
+    .canvas {
+        position: relative;
+        z-index: 2;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: inherit;
+        }
+    }
+}

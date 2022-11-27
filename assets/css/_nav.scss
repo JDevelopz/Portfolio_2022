@@ -1,0 +1,49 @@
+@import './root';
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .logo {
+        max-width: 50px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            list-style: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+    }
+    .search-field {
+        border: solid 1px grey;
+        width: 180px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        input {
+            outline: none;
+            border: none;   
+        }
+        button {
+            border: none;
+            background-color: inherit;
+        }
+
+    }
+}
+
+// display none 
+.sm-none {
+    @media screen and (max-width: 768px) {
+        display: none !important;
+    }
+}
