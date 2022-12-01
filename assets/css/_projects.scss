@@ -2,5 +2,61 @@
 // Projects Section 
 #projects {
     background-color: $background-yellow;
-    height: 90vh;
+    padding: 50px 0 50px 0; 
+    .projects {
+        position: relative;
+        padding: 50px 0px 50px 0px;
+        @media screen and (max-width: 576px) {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .project-title {
+            width: 20%;
+        }
+        .projects-overview {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+
+        }
+        .project-card {
+            margin-right: 50px;
+            @media screen and (max-width:567px){
+                margin-right: 0px;
+            }
+            margin-top: 50px;
+            h2 {
+                width: 70%;
+            }
+            hr {
+                margin-bottom: 20px;
+                height: 2px;
+                background-color: black;
+                width: 100%;
+                border: none;
+            }
+            img { 
+                margin-top: 20px;
+                width:100%;
+                height: auto;
+            }
+        }
+        .p-2 {
+            @media screen and (min-width: 768px) {
+                position: relative;
+                bottom: 100px;
+            }
+        }
+        .p-3 {
+            @media screen and (min-width: 768px) {
+                position: relative;
+                bottom: 200px;
+                margin-right: 0px;
+            }
+        }
     }
+}
